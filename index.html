@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Nunito&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./bootstrap-5.2.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./fontawesome-free-6.2.0-web/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <title>To-Do List</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: 'Nunito', sans-serif;
+        }
+
+        .card {
+            min-height: 600px;
+            background-color: #4158D0;
+            background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+            opacity: 0.9;
+            border-style: none;
+            border-bottom-left-radius: 110px;
+            padding-bottom: 50px;
+
+        }
+
+        .card-header {
+            text-align: center;
+            display: flex;
+            align-items: center;
+            border-bottom: solid 5px white;
+        }
+
+        i.fa-xmark{
+            text-decoration: none!important;
+        }
+        h1.head{
+            width: 90%;
+            font-size: auto;
+            font-weight: bold;
+            color: white;
+        }
+        ul#myList {
+            align-items: center;
+            padding: 0px;
+        }
+
+        .list-group-item {
+            font-size: 25px;
+            background-color: white;
+            color: black;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 10px;
+            margin: 10px 2px 5px;
+            padding: 5px;
+        }
+        .list-group-item:hover{
+            background-color: #B3FFAE!important;
+        }
+        .list-group-item:nth-child(even) {
+            background-color: #EEEEEE;
+        }
+        .checked {
+            text-decoration: line-through;
+            justify-content: space-between;
+            background-color: #B3FFAE!important;
+        }
+        .checked::before{
+            content: url(./fontawesome-free-6.2.0-web/svgs/solid/check.svg);
+            font-size: 20px;
+            width: 20px;
+        }
+        .input-group {
+            justify-content: space-between;
+        }
+        .input-forms {
+            width: 85%;
+            min-width: 150px;
+
+        }
+        input.form-control{
+            border-style: none;
+            font-size: 28px;
+            border-radius: 200px;
+        }
+        input.form-control:hover{
+            color: black;
+        }
+        input.form-control:focus {
+            border-style: none;
+            -webkit-box-shadow: 0px 0px 0px 8px rgba(255,117,255,1);
+            -moz-box-shadow: 0px 0px 0px 8px rgba(255,117,255,1);
+            box-shadow: 0px 0px 0px 8px rgba(255,117,255,1);               
+        }
+        #addBtn {
+            min-width: 10%;
+            font-size: 20px;
+            background-color: white;
+            color: #C850C0;
+            font-weight: bold;
+            border-style: none;
+            border-radius: 20px;
+            border: solid 2px #C850C0
+        }
+        #addBtn:hover {
+            color: black;
+            background-color: #B3FFAE;
+            -webkit-box-shadow: 0px 0px 0px 8px rgba(255,117,255,1);
+            -moz-box-shadow: 0px 0px 0px 8px rgba(255,117,255,1);
+            box-shadow: 0px 0px 0px 8px rgba(255,117,255,1);
+            border-radius: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- toasts başlangıç -->
+
+    <div class="toast-container position-fixed top-0 end-0 p-3">
+        <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header fs-5">
+                <strong class="me-auto" id="toastTitle"></strong>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div id="tost-Bg">
+                <div class="toast-body fs-6 text-light" id="toastMessage">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- toasts bitiş -->
+
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-sm-12 col-lg-10">
+                <div class="card mt-5 mb-5">
+                    <div class="card-header mb-2">
+                        <h1 class="head">
+                            Yapılacaklar Listesi
+                        </h1>
+                    </div>
+                    <div class="card-body">
+                        <div class="input-group input-group  mb-3">
+                            <form class="input-forms d-flex">
+                                <input id="addText" class="form-control" type="text"
+                                    placeholder="bugün ne yapacaksın?">
+                            </form>
+                            <input id="addBtn" class="btn" type="button" value="Ekle">
+                        </div>
+                        <ul id='myList' class="list-group-flush mt-3">
+                            <li class="list-group-item">3 litre su iç</li>
+                            <li class="list-group-item">ödevleri yap</li>
+                            <li class="list-group-item">en az 3 saat kodlama yap</li>
+                            <li class="list-group-item">yemek yap</li>
+                            <li class="list-group-item">50 sayfa kitap oku</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="./bootstrap-5.2.2-dist/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>
