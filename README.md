@@ -4,8 +4,12 @@
 
 Eğitim kapsamında Javascript ile to-do list geliştirdim.
 
-[](https://user-images.githubusercontent.com/101877656/195268435-2a28da8e-a6b3-44e6-9a6a-2bfddef57488.mp4)
 
+
+
+
+
+https://user-images.githubusercontent.com/101877656/199877490-1abc6ca2-cc96-470e-842c-3b65718bbe01.mp4
 
 
 
