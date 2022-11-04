@@ -33,7 +33,7 @@ Bootstrap, Css ve Javascript kullanarak **Yapılacaklar Listesi** geliştirdim. 
 
 <sub>*Ancak HTML'de bulunan elemanların kalması gerekiyor*<sub>
 
->[Proje linki](https://github.com/ozancylan/to-do-list.git)
+>[Proje linki](https://ozancylan.github.io/to-do-list/)
 
 Kullandığım teknolojiler;
 
