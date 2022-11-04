@@ -4,8 +4,12 @@
 
 Eğitim kapsamında Javascript ile to-do list geliştirdim.
 
-[](https://user-images.githubusercontent.com/101877656/195268435-2a28da8e-a6b3-44e6-9a6a-2bfddef57488.mp4)
 
+
+
+
+
+https://user-images.githubusercontent.com/101877656/199877490-1abc6ca2-cc96-470e-842c-3b65718bbe01.mp4
 
 
 
@@ -29,7 +33,7 @@ Bootstrap, Css ve Javascript kullanarak **Yapılacaklar Listesi** geliştirdim. 
 
 <sub>*Ancak HTML'de bulunan elemanların kalması gerekiyor*<sub>
 
->[Proje linki](https://github.com/ozancylan/to-do-list.git)
+>[Proje linki](https://ozancylan.github.io/to-do-list/)
 
 Kullandığım teknolojiler;
 
